@@ -77,17 +77,6 @@ export function ProgramsOverview() {
                 </div>
               ))}
             </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                <GraduationCap className="w-5 h-5 mr-2" />
-                Explore Programs
-              </Button>
-              <Button size="lg" variant="outline" className="border-green-600 text-green-700 hover:bg-green-50">
-                Admission Process
-              </Button>
-            </div>
           </div>
 
           {/* Image */}

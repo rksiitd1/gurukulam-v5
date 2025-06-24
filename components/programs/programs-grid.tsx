@@ -252,9 +252,6 @@ export function ProgramsGrid() {
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
-                  <Button variant="outline" className="border-green-600 text-green-700 hover:bg-green-50">
-                    Apply Now
-                  </Button>
                 </div>
               </CardContent>
             </Card>

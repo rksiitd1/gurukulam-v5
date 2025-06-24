@@ -12,7 +12,7 @@ const notoSansDevanagari = Noto_Sans_Devanagari({
 })
 
 export const metadata: Metadata = {
-  title: "Shri Mukund Agarwal | Divya Bihar Mission",
+  title: "Divya Bihar Mission",
   description:
     "From IIT to Village - Empowering Bihar through dharmic education, sustainable farming, and cultural values. Join our mission to transform rural communities.",
   keywords:

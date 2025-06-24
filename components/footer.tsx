@@ -12,7 +12,7 @@ export function Footer() {
   ]
 
   const programs = [
-    { name: "DBG Gurukulam", href: "/programs/gurukul" },
+    { name: "DBG Gurukulam", href: "/programs/gurukulam" },
     { name: "Shri Classes", href: "/programs/shri-classes" },
     { name: "Agro Projects", href: "/programs/agriculture" },
     { name: "Udyamita Program", href: "/programs/udyamita" },

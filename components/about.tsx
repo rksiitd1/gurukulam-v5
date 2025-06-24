@@ -105,8 +105,7 @@ export function About() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <span className="text-gray-700">2024: Established Divya Bihar Global Gurukulam
-</span>
+                  <span className="text-gray-700">2024: Established Divya Bihar Global Gurukulam</span>
                 </div>
               </div>
             </div>

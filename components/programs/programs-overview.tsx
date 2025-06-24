@@ -6,7 +6,7 @@ export function ProgramsOverview() {
   const programs = [
     {
       icon: <GraduationCap className="w-8 h-8 text-blue-500" />,
-      name: "Divya Bihar Gurukul",
+      name: "Divya Bihar Global Gurukulam",
       students: "200+",
       description: "K-12 residential education",
     },

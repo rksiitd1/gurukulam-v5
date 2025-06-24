@@ -18,7 +18,7 @@ export function FAQ() {
         {
           question: "What is Divya Bihar Mission?",
           answer:
-            "Divya Bihar Mission is a comprehensive rural development organization founded by Mukund Agarwal in 2018. We focus on holistic education, sustainable agriculture, and community empowerment in rural Bihar through our four main programs: DBG Gurukulam, Shri Classes, Agriculture Program, and Udyamita Program.",
+            "Divya Bihar Mission is a comprehensive rural development organization founded by Mukund Agarwal in 2018. We focus on holistic education, sustainable agriculture, and community empowerment in rural Bihar through our four main programs: Divya Bihar Global Gurukulam, Shri Classes, Agriculture Program, and Udyamita Program.",
         },
         {
           question: "Where are you located?",
@@ -36,7 +36,7 @@ export function FAQ() {
       category: "Admissions",
       questions: [
         {
-          question: "What is the admission process for DBG Gurukulam?",
+          question: "What is the admission process for Divya Bihar Global Gurukulam?",
           answer:
             "Our admission process involves four steps: 1) Online/Offline application submission, 2) Document verification, 3) Student and parent interview, 4) Admission confirmation. The entire process takes 7-10 days. We focus on identifying students who will benefit most from our holistic education approach.",
         },

@@ -8,7 +8,7 @@ export function EventHighlights() {
       id: 1,
       title: "Annual Convocation 2024",
       date: "March 15, 2024",
-      location: "Divya Bihar Gurukul Campus",
+      location: "Divya Bihar Global Gurukulam Campus",
       attendees: "200+",
       description: "Celebrating the achievements of our graduating students with awards and recognition ceremonies.",
       images: [

@@ -7,11 +7,11 @@ import { MapPin, Navigation, Car, Train, Plane } from "lucide-react"
 export function LocationMap() {
   const locations = [
     {
-      name: "Main Campus - Divya Bihar Gurukul",
+      name: "Main Campus - Divya Bihar Global Gurukulam",
       address: "Village Raghopur, Supaul District, Bihar - 847239",
       coordinates: "26.301284° N, 86.838190° E",
       type: "primary",
-      description: "Our main residential campus with Gurukul and administrative offices",
+      description: "Our main residential campus with Gurukulam and administrative offices",
     },
     {
       name: "Agriculture Center",

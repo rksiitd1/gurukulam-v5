@@ -7,9 +7,9 @@ import Link from "next/link"
 export function ProgramsGrid() {
   const programs = [
     {
-      id: "gurukul",
-      title: "Divya Bihar Gurukul",
-      subtitle: "दिव्य बिहार गुरुकुल",
+      id: "gurukulam",
+      title: "Divya Bihar Global Gurukulam",
+      subtitle: "दिव्य बिहार ग्लोबल गुरुकुलम",
       icon: <GraduationCap className="w-8 h-8 text-blue-500" />,
       description:
         "Residential K-12 school providing holistic education that combines NCERT curriculum with Sanskrit, Yoga, and traditional Indian values in a nurturing environment.",
@@ -35,7 +35,7 @@ export function ProgramsGrid() {
         "Character-based Education",
       ],
       color: "blue",
-      link: "/programs/gurukul",
+      link: "/programs/gurukulam",
     },
     {
       id: "shri-classes",
@@ -277,7 +277,7 @@ export function ProgramsGrid() {
               </thead>
               <tbody>
                 <tr className="border-b border-gray-100">
-                  <td className="py-3 px-4 font-medium text-blue-600">Divya Bihar Gurukul</td>
+                  <td className="py-3 px-4 font-medium text-blue-600">Divya Bihar Gurukulam</td>
                   <td className="text-center py-3 px-4">5-18 years</td>
                   <td className="text-center py-3 px-4">K-12 (13 years)</td>
                   <td className="text-center py-3 px-4">Residential</td>

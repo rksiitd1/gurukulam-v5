@@ -196,33 +196,6 @@ export function GurukulamFacilities() {
             ))}
           </div>
         </div>
-
-        {/* Campus Statistics */}
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 text-white">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-2">Campus at a Glance</h3>
-            <p className="opacity-90 font-devanagari">परिसर की झलक</p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">10</div>
-              <div className="text-sm opacity-90">Acres Campus</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">25</div>
-              <div className="text-sm opacity-90">Classrooms</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">6</div>
-              <div className="text-sm opacity-90">Laboratories</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">200+</div>
-              <div className="text-sm opacity-90">Hostel Capacity</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

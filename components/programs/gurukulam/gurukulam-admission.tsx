@@ -36,49 +36,6 @@ export function GurukulamAdmission() {
     },
   ]
 
-  const feeStructure = [
-    {
-      grade: "K-2",
-      tuition: "₹1,500",
-      hostel: "₹800",
-      meals: "₹700",
-      total: "₹3,000",
-      annual: "₹36,000",
-    },
-    {
-      grade: "3-5",
-      tuition: "₹1,800",
-      hostel: "₹800",
-      meals: "₹700",
-      total: "₹3,300",
-      annual: "₹39,600",
-    },
-    {
-      grade: "6-8",
-      tuition: "₹2,000",
-      hostel: "₹1,000",
-      meals: "₹800",
-      total: "₹3,800",
-      annual: "₹45,600",
-    },
-    {
-      grade: "9-10",
-      tuition: "₹2,500",
-      hostel: "₹1,000",
-      meals: "₹800",
-      total: "₹4,300",
-      annual: "₹51,600",
-    },
-    {
-      grade: "11-12",
-      tuition: "₹3,000",
-      hostel: "₹1,200",
-      meals: "₹1,000",
-      total: "₹5,200",
-      annual: "₹62,400",
-    },
-  ]
-
   const scholarships = [
     {
       type: "Merit Scholarship",
@@ -170,44 +127,6 @@ export function GurukulamAdmission() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-
-        {/* Fee Structure */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 text-center mb-12">Fee Structure (Monthly)</h3>
-
-          <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
-              <thead className="bg-blue-600 text-white">
-                <tr>
-                  <th className="py-4 px-6 text-left">Grade</th>
-                  <th className="py-4 px-6 text-center">Tuition</th>
-                  <th className="py-4 px-6 text-center">Hostel</th>
-                  <th className="py-4 px-6 text-center">Meals</th>
-                  <th className="py-4 px-6 text-center">Monthly Total</th>
-                  <th className="py-4 px-6 text-center">Annual Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                {feeStructure.map((fee, index) => (
-                  <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                    <td className="py-4 px-6 font-medium text-gray-900">{fee.grade}</td>
-                    <td className="py-4 px-6 text-center">{fee.tuition}</td>
-                    <td className="py-4 px-6 text-center">{fee.hostel}</td>
-                    <td className="py-4 px-6 text-center">{fee.meals}</td>
-                    <td className="py-4 px-6 text-center font-semibold text-blue-600">{fee.total}</td>
-                    <td className="py-4 px-6 text-center font-bold text-green-600">{fee.annual}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <div className="mt-6 text-center">
-            <p className="text-sm text-gray-600">
-              * Additional charges: Admission fee ₹5,000 (one-time), Books & Uniform ₹3,000/year, Activities ₹2,000/year
-            </p>
           </div>
         </div>
 

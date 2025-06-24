@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Youtube, Mail, Phone, MapPin, Heart } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   const quickLinks = [
@@ -24,9 +25,7 @@ export function Footer() {
           {/* About Section - full width on mobile */}
           <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm sm:text-lg">म</span>
-              </div>
+              <Image src="/DBM-logo.png" alt="Divya Bihar Mission Logo" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10 object-contain" priority />
               <div>
                 <h3 className="text-base sm:text-lg font-bold">Divya Bihar Mission</h3>
                 <p className="text-xs sm:text-sm text-gray-400 font-devanagari">दिव्य बिहार मिशन</p>

@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Heart } from "lucide-react"
 
@@ -23,9 +24,7 @@ export function Header() {
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo - responsive sizing */}
           <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm sm:text-lg">म</span>
-            </div>
+            <Image src="/DBM-logo.png" alt="Divya Bihar Mission Logo" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10 object-contain" priority />
             <div className="hidden xs:block">
               <h1 className="text-lg sm:text-xl font-bold text-gray-900">Divya Bihar Mission </h1>
               <p className="text-xs text-gray-600 font-devanagari">दिव्य बिहार मिशन</p>

@@ -8,17 +8,21 @@ export function LocationMap() {
   const locations = [
     {
       name: "Main Campus - Divya Bihar Global Gurukulam",
-      address: "Village Raghopur, Supaul District, Bihar - 847239",
-      coordinates: "26.301284° N, 86.838190° E",
+      address: "Village Raghopur, Supaul District, Bihar – 852111",
+      coordinates: "26.30128° N, 86.83820° E",
       type: "primary",
-      description: "Our main residential campus with Gurukulam and administrative offices",
+      description: "Our main residential campus with Gurukulam and office",
+      mapsUrl: "https://www.google.com/maps/dir/?api=1&destination=26.301284,86.838190",
+      locationUrl: "https://maps.app.goo.gl/37NWe3Hm5ku9S4r27",
     },
     {
-      name: "Agriculture Center",
-      address: "Village Pirpainti, Bhagalpur District, Bihar - 812005",
-      coordinates: "25.2461° N, 86.9833° E",
+      name: "Agriculture & Training Center",
+      address: "Village Pirpainti, Bhagalpur District, Bihar – 813209",
+      coordinates: "25.32187° N, 87.42092° E",
       type: "secondary",
       description: "Demonstration farm and agricultural training center",
+      mapsUrl: "https://www.google.com/maps/dir/?api=1&destination=25.321870,87.420920",
+      locationUrl: "https://maps.app.goo.gl/FcxsNNirW43SQvo86",
     },
   ]
 
@@ -154,7 +158,7 @@ export function LocationMap() {
                     <div className="flex space-x-3 pt-3">
                       <Button
                         size="sm"
-                        onClick={() => handleLocationDirections(location.coordinates)}
+                        onClick={() => window.open(location.mapsUrl, "_blank")}
                         className="bg-blue-600 hover:bg-blue-700 text-white"
                       >
                         <Navigation className="w-4 h-4 mr-1" />
@@ -163,20 +167,7 @@ export function LocationMap() {
                       <Button
                         size="sm"
                         variant="outline"
-                        onClick={() => {
-                          if (navigator.share) {
-                            navigator.share({
-                              title: location.name,
-                              text: location.address,
-                              url:
-                                location.type === "primary"
-                                  ? "https://maps.app.goo.gl/37NWe3Hm5ku9S4r27"
-                                  : window.location.href,
-                            })
-                          } else {
-                            navigator.clipboard.writeText(location.address)
-                          }
-                        }}
+                        onClick={() => window.open(location.locationUrl, "_blank")}
                         className="border-gray-300 text-gray-700"
                       >
                         Share Location

@@ -5,6 +5,7 @@ import { DonationForm } from "@/components/donate/donation-form"
 import { TaxBenefits } from "@/components/donate/tax-benefits"
 import { TransparencyReport } from "@/components/donate/transparency-report"
 import { DonorTestimonials } from "@/components/donate/donor-testimonials"
+import { CallToAction } from "@/components/call-to-action"
 
 export default function DonatePage() {
   return (
@@ -16,6 +17,7 @@ export default function DonatePage() {
       <TaxBenefits />
       <TransparencyReport />
       <DonorTestimonials />
+      <CallToAction />
     </div>
   )
 }

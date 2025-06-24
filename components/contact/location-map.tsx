@@ -119,13 +119,6 @@ export function LocationMap() {
                     <span className="text-sm font-medium">Main Campus</span>
                   </div>
                 </div>
-
-                <div className="absolute bottom-4 right-4 bg-white rounded-lg p-3 shadow-lg">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    <span className="text-sm font-medium">Agriculture Center</span>
-                  </div>
-                </div>
               </div>
             </CardContent>
           </Card>

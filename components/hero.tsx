@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Play, Heart, Users } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Hero() {
   return (
@@ -59,14 +60,16 @@ export function Hero() {
                 <Heart className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Support Our Mission
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto touch-manipulation"
-              >
-                <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Join Our Gurukul
-              </Button>
+              <Link href="/join-our-gurukulam">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto touch-manipulation"
+                >
+                  <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                  Join Our Gurukulam
+                </Button>
+              </Link>
               <Button
                 size="lg"
                 variant="ghost"

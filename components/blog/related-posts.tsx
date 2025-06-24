@@ -28,12 +28,12 @@ export function RelatedPosts() {
     },
     {
       id: 3,
-      title: "Traditional Festivals at Gurukul: Preserving Cultural Heritage",
+      title: "Traditional Festivals at Gurukulam: Preserving Cultural Heritage",
       excerpt:
-        "Celebrating Diwali, Holi, and other festivals at our Gurukul while teaching students about their cultural significance and values.",
+        "Celebrating Diwali, Holi, and other festivals at our Gurukulam while teaching students about their cultural significance and values.",
       date: "2024-01-10",
       image: "/placeholder.svg?height=200&width=350",
-      slug: "traditional-festivals-gurukul-cultural-heritage",
+      slug: "traditional-festivals-gurukulam-cultural-heritage",
       type: "Article",
     },
   ]

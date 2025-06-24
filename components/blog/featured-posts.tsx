@@ -17,12 +17,12 @@ export function FeaturedPosts() {
     },
     {
       id: 2,
-      title: "Gurukul Education: Bridging Ancient Wisdom with Modern Learning",
+      title: "Gurukulam Education: Bridging Ancient Wisdom with Modern Learning",
       excerpt:
-        "Exploring how our Gurukul system combines traditional Sanskrit education with contemporary subjects to create well-rounded individuals.",
+        "Exploring how our Gurukulam system combines traditional Sanskrit education with contemporary subjects to create well-rounded individuals.",
       date: "2024-01-12",
       image: "/placeholder.svg?height=400&width=600",
-      slug: "gurukul-education-ancient-wisdom-modern-learning",
+      slug: "gurukulam-education-ancient-wisdom-modern-learning",
       type: "Video",
     },
     {

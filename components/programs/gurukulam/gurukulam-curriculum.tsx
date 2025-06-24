@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { BookOpen, Calculator, Globe, Palette, Music, Dumbbell, Heart, Brain } from "lucide-react"
 
-export function GurukulCurriculum() {
+export function GurukulamCurriculum() {
   const curriculumStructure = [
     {
       level: "Primary (K-5)",
@@ -155,7 +155,7 @@ export function GurukulCurriculum() {
             Our curriculum seamlessly blends NCERT standards with traditional Indian knowledge systems, ensuring
             students receive both modern education and cultural grounding.
           </p>
-          <p className="text-lg font-devanagari text-blue-700 mt-2">व्यापक शैक्षणिक ढांचा</p>
+          <p className="text-lg font-devanagari text-blue-700 mt-2">गुरुकुलम</p>
         </div>
 
         {/* Curriculum Levels */}

@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Home, BookOpen, Utensils, Dumbbell, Microscope, Wifi, Shield, Heart } from "lucide-react"
 import Image from "next/image"
 
-export function GurukulFacilities() {
+export function GurukulamFacilities() {
   const facilities = [
     {
       category: "Accommodation",
@@ -130,7 +130,7 @@ export function GurukulFacilities() {
             Our campus provides a nurturing environment with modern facilities that support both academic excellence and
             holistic development of every student.
           </p>
-          <p className="text-lg font-devanagari text-green-700 mt-2">विश्व स्तरीय सुविधाएं</p>
+          <p className="text-lg font-devanagari text-green-700 mt-2">गुरुकुलम</p>
         </div>
 
         {/* Facilities Grid */}

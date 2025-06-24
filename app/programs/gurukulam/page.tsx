@@ -1,18 +1,18 @@
-import { GurukulHero } from "@/components/programs/gurukulam/gurukul-hero"
-import { GurukulCurriculum } from "@/components/programs/gurukulam/gurukul-curriculum"
-import { GurukulFacilities } from "@/components/programs/gurukulam/gurukul-facilities"
-import { GurukulAdmission } from "@/components/programs/gurukulam/gurukul-admission"
-import { GurukulTestimonials } from "@/components/programs/gurukulam/gurukul-testimonials"
+import { GurukulamHero } from "@/components/programs/gurukulam/gurukulam-hero"
+import { GurukulamCurriculum } from "@/components/programs/gurukulam/gurukulam-curriculum"
+import { GurukulamFacilities } from "@/components/programs/gurukulam/gurukulam-facilities"
+import { GurukulamAdmission } from "@/components/programs/gurukulam/gurukulam-admission"
+import { GurukulamTestimonials } from "@/components/programs/gurukulam/gurukulam-testimonials"
 import { CallToAction } from "@/components/call-to-action"
 
 export default function GurukulamPage() {
   return (
     <main>
-      <GurukulHero />
-      <GurukulCurriculum />
-      <GurukulFacilities />
-      <GurukulAdmission />
-      <GurukulTestimonials />
+      <GurukulamHero />
+      <GurukulamCurriculum />
+      <GurukulamFacilities />
+      <GurukulamAdmission />
+      <GurukulamTestimonials />
       <CallToAction />
     </main>
   )

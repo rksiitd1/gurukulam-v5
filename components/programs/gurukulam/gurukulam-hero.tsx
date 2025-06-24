@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { GraduationCap, Home, Users, Award } from "lucide-react"
 import Image from "next/image"
 
-export function GurukulHero() {
+export function GurukulamHero() {
   const highlights = [
     { icon: <Users className="w-5 h-5" />, label: "200+ Students", value: "K-12 Education" },
     { icon: <Home className="w-5 h-5" />, label: "Residential", value: "Hostel Facilities" },
@@ -23,9 +23,9 @@ export function GurukulHero() {
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Divya Bihar
-                <span className="text-blue-600 block">Gurukul</span>
-                <span className="text-indigo-700 block font-devanagari text-3xl lg:text-4xl mt-2">दिव्य बिहार गुरुकुल</span>
+                Divya Bihar Global
+                <span className="text-blue-600 block">Gurukulam</span>
+                <span className="text-indigo-700 block font-devanagari text-3xl lg:text-4xl mt-2">दिव्य बिहार ग्लोबल गुरुकुलम</span>
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed">
@@ -38,7 +38,7 @@ export function GurukulHero() {
                 <blockquote className="text-blue-800 font-devanagari text-xl mb-2">
                   "गुरुकुले खलु शिक्षा, संस्कारो जीवने सदा"
                 </blockquote>
-                <p className="text-blue-700 italic">"In Gurukul lies education, values remain throughout life"</p>
+                <p className="text-blue-700 italic">"In Gurukulam lies education, values remain throughout life"</p>
               </div>
             </div>
 
@@ -70,7 +70,7 @@ export function GurukulHero() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/placeholder.svg?height=600&width=500"
-                alt="Students at Divya Bihar Gurukul"
+                alt="Students at Divya Bihar Global Gurukulam"
                 width={500}
                 height={600}
                 className="w-full h-auto object-cover"

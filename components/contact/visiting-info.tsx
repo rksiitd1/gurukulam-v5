@@ -6,7 +6,7 @@ export function VisitingInfo() {
       type: "🏫 Campus Tour",
       icon: <Camera className="w-6 h-6 text-blue-500" />,
       description:
-        "Walk through our Gurukul campus and experience the spaces where learning, simplicity, and service come together. This visit offers a glimpse into our classrooms, living areas, and daily life in the mission.",
+        "Walk through our Gurukulam campus and experience the spaces where learning, simplicity, and service come together. This visit offers a glimpse into our classrooms, living areas, and daily life in the mission.",
       requirements: [
         "Kindly inform us in advance so we can warmly welcome you",
         "Come as you are, with curiosity and openness",

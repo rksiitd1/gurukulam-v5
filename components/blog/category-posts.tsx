@@ -12,16 +12,16 @@ export function CategoryPosts({ category }: CategoryPostsProps) {
   const posts = [
     {
       id: 1,
-      title: "Gurukul Education: Bridging Ancient Wisdom with Modern Learning",
+      title: "Gurukulam Education: Bridging Ancient Wisdom with Modern Learning",
       excerpt:
-        "Exploring how our Gurukul system combines traditional Sanskrit education with contemporary subjects to create well-rounded individuals.",
+        "Exploring how our Gurukulam system combines traditional Sanskrit education with contemporary subjects to create well-rounded individuals.",
       category: "Education",
       author: "Dr. Priya Sharma",
       date: "2024-01-12",
       readTime: "6 min read",
       views: "1.8K",
       image: "/placeholder.svg?height=300&width=400",
-      slug: "gurukul-education-ancient-wisdom-modern-learning",
+      slug: "gurukulam-education-ancient-wisdom-modern-learning",
     },
     {
       id: 2,

@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, FileText, Users, CheckCircle, IndianRupee, Clock } from "lucide-react"
 
-export function GurukulAdmission() {
+export function GurukulamAdmission() {
   const admissionSchedule = [
     {
       phase: "Application Period",
@@ -129,13 +129,13 @@ export function GurukulAdmission() {
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Join Our
-            <span className="text-blue-600 block">Gurukul Family</span>
+            <span className="text-blue-600 block">Gurukulam Family</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Begin your child's journey of holistic education with us. Our admission process is designed to identify
             students who will thrive in our unique learning environment.
           </p>
-          <p className="text-lg font-devanagari text-blue-700 mt-2">हमारे गुरुकुल परिवार में शामिल हों</p>
+          <p className="text-lg font-devanagari text-blue-700 mt-2">हमारे गुरुकुलम परिवार में शामिल हों</p>
         </div>
 
         {/* Admission Schedule */}
@@ -256,7 +256,7 @@ export function GurukulAdmission() {
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">Ready to Apply?</h3>
           <p className="text-lg opacity-90 mb-6">
-            Take the first step towards your child's bright future. Apply now for admission to Divya Bihar Gurukul.
+            Take the first step towards your child's bright future. Apply now for admission to Divya Bihar Global Gurukulam.
           </p>
           <p className="font-devanagari text-lg opacity-90 mb-8">आवेदन करने के लिए तैयार हैं?</p>
 

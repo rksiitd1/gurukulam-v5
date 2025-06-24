@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Star, Quote } from "lucide-react"
 import Image from "next/image"
 
-export function GurukulTestimonials() {
+export function GurukulamTestimonials() {
   const testimonials = [
     {
       name: "Priya Kumari",
@@ -10,7 +10,7 @@ export function GurukulTestimonials() {
       year: "2023",
       image: "/placeholder.svg?height=100&width=100",
       content:
-        "Divya Bihar Gurukul gave me not just education but values that will guide me throughout life. The teachers here are like family, and the environment helped me grow both academically and personally.",
+        "Divya Bihar Global Gurukulam gave me not just education but values that will guide me throughout life. The teachers here are like family, and the environment helped me grow both academically and personally.",
       achievement: "Secured admission in NIT Patna",
       rating: 5,
     },
@@ -49,7 +49,7 @@ export function GurukulTestimonials() {
       year: "Current Student",
       image: "/placeholder.svg?height=100&width=100",
       content:
-        "The best part about our Gurukul is the family atmosphere. Seniors help juniors, teachers are always available, and we learn so much beyond textbooks through cultural programs.",
+        "The best part about our Gurukulam is the family atmosphere. Seniors help juniors, teachers are always available, and we learn so much beyond textbooks through cultural programs.",
       achievement: "School Cultural Program Leader",
       rating: 5,
     },
@@ -107,13 +107,13 @@ export function GurukulTestimonials() {
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Voices of Our
-            <span className="text-blue-600 block">Gurukul Family</span>
+            <span className="text-blue-600 block">Gurukulam Family</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hear from our students, parents, and alumni about their transformative journey at Divya Bihar Gurukul and
+            Hear from our students, parents, and alumni about their transformative journey at Divya Bihar Gurukulam and
             how it shaped their lives and futures.
           </p>
-          <p className="text-lg font-devanagari text-blue-700 mt-2">हमारे गुरुकुल परिवार की आवाजें</p>
+          <p className="text-lg font-devanagari text-blue-700 mt-2">हमारे गुरुकुलम परिवार की आवाजें</p>
         </div>
 
         {/* Testimonials Grid */}

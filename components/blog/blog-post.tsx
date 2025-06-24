@@ -32,10 +32,25 @@ export function BlogPost({ slug }: BlogPostProps) {
       
       <p>But I was determined. I started small – with just five students in a rented room in Raghopur. We had no fancy infrastructure, no high-tech equipment, just a whiteboard, some books, and an unwavering belief in the power of education.</p>
       
-      <h2>The Gurukul Vision</h2>
-      <p>As our mission grew, I realized that we needed more than just academic excellence. Our children needed to be rooted in their cultural values while being prepared for the modern world. This led to the creation of our Gurukul system – a unique blend of ancient wisdom and contemporary learning.</p>
-      
-      <p>In our Gurukul, students learn Sanskrit alongside Science, practice yoga with mathematics, and understand dharmic values through practical applications. This holistic approach ensures that our students become not just academically successful, but also morally grounded individuals.</p>
+      <h2>The Gurukulam Vision</h2>
+      <p>
+        The journey of Divya Bihar Mission began with a simple yet powerful vision: to provide quality education to
+        every child in rural Bihar, irrespective of their socio-economic background. Our founder, Mukund Agarwal, an
+        IIT Delhi alumnus, witnessed the stark educational disparities in his home state and was moved to create a
+        system that was both modern in its approach and rooted in Indian values.
+      </p>
+      <p>
+        Our founder's vision was not just to build schools, but to create centers of excellence that would serve as
+        beacons of hope and transformation for entire communities. The goal was to nurture students who were not
+        only academically proficient but also culturally aware, socially responsible, and equipped to lead in a global
+        world. This led to the creation of our Gurukulam system – a unique blend of ancient wisdom and contemporary
+        learning.
+      </p>
+      <p>
+        In our Gurukulam, students learn Sanskrit alongside Science, practice yoga with mathematics, and understand
+        dharmic values through practical applications. This holistic approach ensures that our students become
+        well-rounded individuals, ready to face life's challenges with confidence and integrity.
+      </p>
       
       <h2>Impact and Growth</h2>
       <p>Today, six years later, Divya Bihar Mission has grown beyond my wildest dreams. We have:</p>

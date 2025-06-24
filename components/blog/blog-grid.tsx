@@ -33,12 +33,12 @@ export function BlogGrid() {
     },
     {
       id: 3,
-      title: "Traditional Festivals at Gurukul: Preserving Cultural Heritage",
+      title: "Traditional Festivals at Gurukulam: Preserving Cultural Heritage",
       excerpt:
-        "Celebrating Diwali, Holi, and other festivals at our Gurukul while teaching students about their cultural significance and values.",
+        "Celebrating Diwali, Holi, and other festivals at our Gurukulam while teaching students about their cultural significance and values.",
       date: "2024-01-10",
       image: "/placeholder.svg?height=200&width=350",
-      slug: "traditional-festivals-gurukul-cultural-heritage",
+      slug: "traditional-festivals-gurukulam-cultural-heritage",
       type: "Article",
     },
     {
@@ -53,12 +53,12 @@ export function BlogGrid() {
     },
     {
       id: 5,
-      title: "Parent Testimonials: Why Families Choose Our Gurukul",
+      title: "Parent Testimonials: Why Families Choose Our Gurukulam",
       excerpt:
-        "Hear from parents about their experience with our holistic education system and how it has transformed their children's lives.",
+        "Hear directly from parents about their experiences with Divya Bihar Mission and why they believe in our educational approach.",
       date: "2024-01-05",
       image: "/placeholder.svg?height=200&width=350",
-      slug: "parent-testimonials-families-choose-gurukul",
+      slug: "parent-testimonials-families-choose-gurukulam",
       type: "Article",
     },
     {
@@ -103,8 +103,8 @@ export function BlogGrid() {
     },
     {
       id: 10,
-      title: "Yoga and Meditation: Daily Practice at Gurukul",
-      excerpt: "How daily yoga and meditation sessions help our students develop focus, discipline, and inner peace.",
+      title: "Yoga and Meditation: Daily Practice at Gurukulam",
+      excerpt: "A look into the daily yoga and meditation practices at our centers and how they contribute to students' well-being and focus.",
       date: "2023-12-20",
       image: "/placeholder.svg?height=200&width=350",
       slug: "yoga-meditation-daily-practice",

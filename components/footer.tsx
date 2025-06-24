@@ -102,19 +102,19 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500" />
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919262536295"
                   className="text-sm text-gray-300 hover:text-orange-500 transition-colors touch-manipulation"
                 >
-                  +91 98765 43210
+                  +91 9262536295
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500" />
                 <a
-                  href="mailto:contact@divyabiharmission.in"
+                  href="mailto:vidyalayabhagalpur@gmail.com"
                   className="text-sm text-gray-300 hover:text-orange-500 transition-colors touch-manipulation"
                 >
-                  contact@divyabiharmission.in
+                  vidyalayabhagalpur@gmail.com
                 </a>
               </div>
             </div>

@@ -127,11 +127,11 @@ export function CallToAction() {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-yellow-300" />
-                  <span className="text-sm">+91 98765 43210</span>
+                  <span className="text-sm">+91 9262536295 (WhatsApp & Call)</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-yellow-300" />
-                  <span className="text-sm">contact@divyabiharmission.in</span>
+                  <span className="text-sm">vidyalayabhagalpur@gmail.com</span>
                 </div>
               </div>
             </div>

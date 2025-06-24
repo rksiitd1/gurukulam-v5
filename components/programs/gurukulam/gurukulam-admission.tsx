@@ -192,7 +192,7 @@ export function GurukulamAdmission() {
 
           <div className="mt-6 text-sm opacity-80">
             <p>Application Deadline: March 31, 2024</p>
-            <p>For queries: admissions@divyabiharmission.in | +91 98765 43210</p>
+            <p>For queries: vidyalayabhagalpur@gmail.com | +91 9262536295 (WhatsApp & Call)</p>
           </div>
         </div>
       </div>

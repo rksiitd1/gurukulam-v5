@@ -336,7 +336,7 @@ export function ContactForm() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Call Us Now</h4>
-                      <p className="text-green-600 font-medium">+91 98765 43210</p>
+                      <p className="text-green-600 font-medium">+91 9262536295 (WhatsApp & Call)</p>
                       <p className="text-sm text-gray-600">Mon-Sat, 9 AM - 6 PM</p>
                     </div>
                   </div>
@@ -351,7 +351,7 @@ export function ContactForm() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">WhatsApp</h4>
-                      <p className="text-blue-600 font-medium">+91 98765 43210</p>
+                      <p className="text-blue-600 font-medium">+91 9262536295 (WhatsApp & Call)</p>
                       <p className="text-sm text-gray-600">Quick responses</p>
                     </div>
                   </div>
@@ -366,7 +366,7 @@ export function ContactForm() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Email Support</h4>
-                      <p className="text-purple-600 font-medium">contact@divyabiharmission.in</p>
+                      <p className="text-purple-600 font-medium">vidyalayabhagalpur@gmail.com</p>
                       <p className="text-sm text-gray-600">24-hour response</p>
                     </div>
                   </div>
@@ -385,11 +385,7 @@ export function ContactForm() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
-                    <span className="text-sm">Phone calls answered during office hours</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
-                    <span className="text-sm">WhatsApp messages replied quickly</span>
+                    <span className="text-sm">Phone & WhatsApp answered during office hours</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-white rounded-full"></div>

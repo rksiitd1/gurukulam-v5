@@ -36,9 +36,10 @@ export function GurukulamHero() {
 
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
                 <blockquote className="text-blue-800 font-devanagari text-xl mb-2">
-                  "गुरुकुले खलु शिक्षा, संस्कारो जीवने सदा"
+                  "विद्यां चाविनयं चैव, शक्तिं शीलं पराक्रमम्।<br />
+                  एतत् सर्वं गुरुकुले, सम्यगाधीयते सदा॥"
                 </blockquote>
-                <p className="text-blue-700 italic">"In Gurukulam lies education, values remain throughout life"</p>
+                <p className="text-blue-700 italic">"In the Gurukulam, one truly learns knowledge, humility, strength, character, and courage — all in harmony."</p>
               </div>
             </div>
 

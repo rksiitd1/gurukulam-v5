@@ -15,7 +15,7 @@ export function ProgramsGrid() {
         "Residential K-12 school providing holistic education that combines NCERT curriculum with Sanskrit, Yoga, and traditional Indian values in a nurturing environment.",
       image: "/placeholder.svg?height=300&width=400",
       features: [
-        "NCERT + Sanskrit Curriculum",
+        "NCERT Curriculum",
         "Residential Facilities",
         "Yoga & Meditation",
         "Cultural Programs",

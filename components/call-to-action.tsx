@@ -127,7 +127,7 @@ export function CallToAction() {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-yellow-300" />
-                  <span className="text-sm">+91 9262536295 (WhatsApp & Call)</span>
+                  <span className="text-sm">+91 92625 36295 </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-yellow-300" />

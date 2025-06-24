@@ -314,7 +314,7 @@ export function ContactForm() {
                   <div className="bg-gradient-to-r from-red-50 to-red-100 border-2 border-red-200 rounded-xl p-4">
                     <p className="text-red-800 font-semibold text-center">
                       ❌ Sorry, there was an error. Please try contacting us directly at{" "}
-                      {formData.preferredContact === "email" ? "vidyalayabhagalpur@gmail.com" : "+91 9262536295"}
+                      {formData.preferredContact === "email" ? "vidyalayabhagalpur@gmail.com" : "+91 92625 36295"}
                     </p>
                   </div>
                 )}
@@ -336,7 +336,7 @@ export function ContactForm() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Call Us Now</h4>
-                      <p className="text-green-600 font-medium">+91 9262536295 (WhatsApp & Call)</p>
+                      <p className="text-green-600 font-medium">+91 92625 36295 </p>
                       <p className="text-sm text-gray-600">Mon-Sat, 9 AM - 6 PM</p>
                     </div>
                   </div>
@@ -351,7 +351,7 @@ export function ContactForm() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">WhatsApp</h4>
-                      <p className="text-blue-600 font-medium">+91 9262536295 (WhatsApp & Call)</p>
+                      <p className="text-blue-600 font-medium">+91 92625 36295 </p>
                       <p className="text-sm text-gray-600">Quick responses</p>
                     </div>
                   </div>

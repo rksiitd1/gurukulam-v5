@@ -105,7 +105,7 @@ export function Footer() {
                   href="tel:+919262536295"
                   className="text-sm text-gray-300 hover:text-orange-500 transition-colors touch-manipulation"
                 >
-                  +91 9262536295
+                  +91 92625 36295
                 </a>
               </div>
               <div className="flex items-center space-x-3">

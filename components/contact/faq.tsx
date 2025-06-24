@@ -204,7 +204,7 @@ export function FAQ() {
                   Email: <span className="text-blue-300">vidyalayabhagalpur@gmail.com</span>
                 </p>
                 <p className="font-semibold">
-                  Phone: <span className="text-blue-300">+91 9262536295</span>
+                  Phone: <span className="text-blue-300">+91 92625 36295</span>
                 </p>
                 <p className="text-xs text-gray-400 mt-3">We typically respond within 24 hours</p>
               </div>

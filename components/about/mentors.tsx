@@ -23,7 +23,7 @@ export function Mentors() {
     },
     {
       name: "Kumar Subham",
-      title: "Director, Sewa International Bharat",
+      title: "Director, Sewa International",
       image: "/images/mentors/kumar-subham.jpg",
       links: [
         { type: "personal", url: "https://www.kumarsubham.in/", label: "Personal site" },

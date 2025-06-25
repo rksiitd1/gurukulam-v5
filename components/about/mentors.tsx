@@ -116,47 +116,77 @@ export function Mentors() {
         {/* Mentors Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {mentors.map((mentor, index) => (
-            <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-4 border-purple-200 bg-gradient-to-br from-white via-purple-50 to-blue-50 hover:from-purple-100 hover:via-blue-100 hover:to-indigo-50 overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/5 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <CardContent className="p-8 text-center space-y-6 relative z-10">
-                {/* Profile Image */}
-                <div className="relative mx-auto w-24 h-24">
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full blur-sm opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-                  <Image
-                    src={mentor.image}
-                    alt={mentor.name}
-                    width={96}
-                    height={96}
-                    className="relative w-full h-full rounded-full object-cover shadow-xl border-4 border-white group-hover:border-purple-200 transition-all duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
-                    <Award className="w-4 h-4 text-white" />
+            <Card key={index} className="group relative overflow-hidden bg-white border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+              {/* Subtle Background Pattern */}
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-50/30 via-transparent to-blue-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <CardContent className="p-0 relative z-10">
+                {/* Header with Image */}
+                <div className="relative p-8 pb-6">
+                  <div className="text-center space-y-6">
+                    {/* Profile Image with Awesome Effects */}
+                    <div className="relative mx-auto">
+                      <div className="w-40 h-48 mx-auto relative transform group-hover:scale-105 transition-transform duration-500">
+                        {/* Background Frame */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-slate-600 via-blue-700 to-indigo-800 transform rotate-2 group-hover:rotate-0 transition-transform duration-500 shadow-xl"></div>
+                        
+                        {/* Inner Frame */}
+                        <div className="absolute inset-1 bg-gradient-to-br from-slate-500 via-blue-600 to-indigo-700 transform -rotate-1 group-hover:rotate-0 transition-transform duration-500"></div>
+                        
+                        {/* Image Container */}
+                        <div className="relative w-full h-full p-2">
+                          <div className="absolute inset-0 bg-gradient-to-br from-slate-100 to-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm"></div>
+                          <Image
+                            src={mentor.image}
+                            alt={mentor.name}
+                            width={160}
+                            height={192}
+                            className="relative w-full h-full object-cover shadow-2xl border-4 border-white group-hover:border-slate-200 transition-all duration-500 group-hover:scale-105"
+                          />
+                        </div>
+                        
+                        {/* Corner Accent */}
+                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-slate-600 to-blue-700 transform rotate-12 group-hover:rotate-0 transition-transform duration-500 shadow-lg border-2 border-white"></div>
+                        
+                        {/* Bottom Shadow Effect */}
+                        <div className="absolute -bottom-4 left-4 right-4 h-8 bg-black/15 blur-xl transform scale-x-75 group-hover:scale-x-100 transition-transform duration-500"></div>
+                      </div>
+                    </div>
+                    
+                    {/* Name and Title */}
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-bold text-gray-900 group-hover:text-slate-800 transition-colors duration-300 leading-tight">
+                        {mentor.name}
+                      </h3>
+                      <div className="w-20 h-0.5 bg-gradient-to-r from-slate-600 to-blue-600 mx-auto transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+                      <p className="text-sm text-gray-600 leading-relaxed font-medium group-hover:text-gray-700 transition-colors duration-300 px-6">
+                        {mentor.title}
+                      </p>
+                    </div>
                   </div>
                 </div>
                 
-                {/* Name & Title */}
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-purple-800 transition-colors duration-300 leading-tight">{mentor.name}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed font-medium group-hover:text-gray-700 transition-colors duration-300">{mentor.title}</p>
-                </div>
-
-                {/* Links */}
+                {/* Links Section */}
                 {mentor.links.length > 0 && (
-                  <div className="flex justify-center gap-3 pt-4">
-                    {mentor.links.map((link, linkIndex) => (
-                      <a
-                        key={linkIndex}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group/link inline-flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1"
-                        title={link.label}
-                      >
-                        <div className="group-hover/link:scale-110 transition-transform duration-200">
-                          {getLinkIcon(link.type)}
-                        </div>
-                      </a>
-                    ))}
+                  <div className="px-8 pb-8">
+                    <div className="flex justify-center gap-3">
+                      {mentor.links.map((link, linkIndex) => (
+                        <a
+                          key={linkIndex}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group/link relative inline-flex items-center justify-center w-10 h-10 bg-slate-50 hover:bg-blue-50 text-slate-600 hover:text-blue-700 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-110 border border-slate-200 hover:border-blue-300"
+                          title={link.label}
+                        >
+                          <div className="group-hover/link:scale-110 transition-transform duration-200">
+                            {getLinkIcon(link.type)}
+                          </div>
+                          {/* Subtle Hover Indicator */}
+                          <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover/link:opacity-100 transition-opacity duration-200"></div>
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 )}
               </CardContent>

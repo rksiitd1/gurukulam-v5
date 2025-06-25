@@ -51,7 +51,7 @@ export function Impact() {
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Transforming Lives Through
-            <span className="text-orange-600 block">Dharmic Education</span>
+            <span className="text-orange-600 block">Education with Yogic Values</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Since 2018, our mission has touched thousands of lives across Bihar, creating sustainable change through

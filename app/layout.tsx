@@ -14,9 +14,9 @@ const notoSansDevanagari = Noto_Sans_Devanagari({
 export const metadata: Metadata = {
   title: "Divya Bihar Mission",
   description:
-    "From IIT to Village - Empowering Bihar through dharmic education, sustainable farming, and cultural values. Join our mission to transform rural communities.",
+    "From IIT to Village - Empowering Bihar through education with yogic values, sustainable farming, and cultural values. Join our mission to transform rural communities.",
   keywords:
-    "Mukund Agarwal, Divya Bihar Mission, IIT Delhi, Bihar education, Gurukulam, rural development, dharmic education",
+    "Mukund Agarwal, Divya Bihar Mission, IIT Delhi, Bihar education, Gurukulam, rural development, education with yogic values",
     generator: 'v0.dev'
 }
 

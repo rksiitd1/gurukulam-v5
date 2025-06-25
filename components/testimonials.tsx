@@ -52,7 +52,7 @@ export function Testimonials() {
       title: "Volunteer",
       image: "/placeholder.svg?height=80&width=80",
       content:
-        "Working with Mukund bhai has been transformative. His vision of dharmic education is creating a new generation of conscious leaders.",
+        "Working with Mukund bhai has been transformative. His vision of education with yogic values is creating a new generation of conscious leaders.",
       rating: 5,
       type: "volunteer",
     },
@@ -94,7 +94,7 @@ export function Testimonials() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Hear from students, parents, mentors, and community members whose lives have been touched by our mission of
-            dharmic education and rural development.
+            education with yogic values and rural development.
           </p>
           <p className="text-lg font-devanagari text-purple-700 mt-2">परिवर्तन की आवाजें</p>
         </div>

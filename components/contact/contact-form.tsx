@@ -389,7 +389,7 @@ export function ContactForm() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
-                    <span className="text-sm">Campus visits by appointment</span>
+                    <span className="text-sm">No apointment needed for campus visits</span>
                   </div>
                 </div>
               </CardContent>

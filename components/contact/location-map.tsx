@@ -254,7 +254,7 @@ export function LocationMap() {
                 <div className="bg-orange-50 rounded-xl p-4">
                   <h5 className="font-bold text-gray-900 mb-2">Highway Access</h5>
                   <p className="text-sm text-gray-700">
-                    We're located near NH-327A, which connects smoothly with the main NH-27 (East–West Corridor).
+                    We're located near NH-131, which connects smoothly with the main NH-27 (East–West Corridor).
                     Whether you're coming from Patna, Darbhanga, or beyond — the roads lead straight to us.
                   </p>
                 </div>

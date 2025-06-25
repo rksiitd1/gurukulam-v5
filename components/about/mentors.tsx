@@ -7,6 +7,7 @@ export function Mentors() {
     {
       name: "Prof. Parag Singla",
       title: "Professor, Department of Computer Science & Engineering, IIT Delhi",
+      image: "/images/mentors/parag-singla.jpg",
       links: [
         { type: "personal", url: "https://www.cse.iitd.ac.in/~parags/", label: "Personal page" },
       ],
@@ -14,6 +15,7 @@ export function Mentors() {
     {
       name: "Prof. Nomesh Bhojkumar Bolia",
       title: "Professor, Department of Mechanical Engineering, IIT Delhi",
+      image: "/images/mentors/nomesh-bolia.jpg",
       links: [
         { type: "profile", url: "https://mech.iitd.ac.in/faculty-profile/173", label: "IIT Delhi profile" },
         { type: "linkedin", url: "https://www.linkedin.com/in/nomesh-bolia-8109966/", label: "LinkedIn" },
@@ -22,6 +24,7 @@ export function Mentors() {
     {
       name: "Kumar Subham",
       title: "Director, Sewa International Bharat",
+      image: "/images/mentors/kumar-subham.jpg",
       links: [
         { type: "personal", url: "https://www.kumarsubham.in/", label: "Personal site" },
         { type: "linkedin", url: "https://www.linkedin.com/in/kumar-subham/", label: "LinkedIn" },
@@ -30,6 +33,7 @@ export function Mentors() {
     {
       name: "Sahil Aggarwal",
       title: "Co-founder & CEO, Rishihood University",
+      image: "/images/mentors/sahil-aggarwal.jpg",
       links: [
         { type: "profile", url: "https://rishihood.edu.in/people/sahil-aggarwal/", label: "Rishihood profile" },
         { type: "linkedin", url: "https://www.linkedin.com/in/sahilagg92/", label: "LinkedIn" },
@@ -38,6 +42,7 @@ export function Mentors() {
     {
       name: "Dr. Rohit Kumar Choudhary",
       title: "Assistant Professor, Department of Environmental Science, University of Delhi",
+      image: "/images/mentors/rohit-choudhary.jpg",
       links: [
         { type: "linkedin", url: "https://www.linkedin.com/in/dr-rohit-kumar-choudhary-957990b5/", label: "LinkedIn" },
       ],
@@ -45,6 +50,7 @@ export function Mentors() {
     {
       name: "Dr. Tarun Mangla",
       title: "Assistant Professor, Department of Computer Science & Engineering, IIT Delhi",
+      image: "/images/mentors/tarun-mangla.jpg",
       links: [
         { type: "linkedin", url: "https://www.linkedin.com/in/tarun-mangla-1a78a237/", label: "LinkedIn" },
       ],
@@ -117,7 +123,7 @@ export function Mentors() {
                 <div className="relative mx-auto w-24 h-24">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full blur-sm opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                   <Image
-                    src="/placeholder.svg?height=200&width=200"
+                    src={mentor.image}
                     alt={mentor.name}
                     width={96}
                     height={96}

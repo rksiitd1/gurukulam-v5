@@ -24,8 +24,8 @@ export function Header() {
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo - responsive sizing */}
           <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
-            <Image src="/DBM-logo.png" alt="Divya Bihar Mission Logo" width={50} height={50} className="w-10 h-10 sm:w-12.5 sm:h-12.5 object-contain" priority />
-            <div className="hidden xs:block">
+            <Image src="/DBM-logo.png" alt="Divya Bihar Mission Logo" width={50} height={50} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" priority />
+            <div className="block">
               <h1 className="text-lg sm:text-xl font-bold text-gray-900">Divya Bihar Mission </h1>
               <p className="text-xs text-gray-600 font-devanagari">दिव्य बिहार मिशन</p>
             </div>
@@ -44,10 +44,10 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Donate Button - responsive */}
-          <div className="flex items-center space-x-2 sm:space-x-4">
+          {/* Donate Button - show only on sm and up */}
+          <div className="hidden sm:flex items-center space-x-2 sm:space-x-4">
             <Button
-              className="bg-orange-600 hover:bg-orange-700 text-white text-xs sm:text-sm px-3 sm:px-4 py-2 h-8 sm:h-10"
+              className="bg-orange-600 hover:bg-orange-700 text-white text-xs sm:text-sm px-3 sm:px-4 py-2 h-7 sm:h-10"
               asChild
             >
               <Link href="/donate">

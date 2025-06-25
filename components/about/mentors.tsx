@@ -1,68 +1,53 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { GraduationCap, Award, Building } from "lucide-react"
+import { GraduationCap, Award, Building, ExternalLink, Linkedin, Globe } from "lucide-react"
 import Image from "next/image"
 
 export function Mentors() {
   const mentors = [
     {
-      name: "Prof. Dr. Rajesh Kumar Sharma",
-      title: "Professor, IIT Delhi",
-      department: "Department of Mechanical Engineering",
-      expertise: "Educational Innovation, Rural Technology",
-      contribution: "Strategic guidance on curriculum development and institutional growth",
-      image: "/placeholder.svg?height=200&width=200",
-      credentials: ["Ph.D. IIT Delhi", "25+ years experience", "100+ research papers"],
-      role: "Academic Advisor",
+      name: "Prof. Parag Singla",
+      title: "Professor, Department of Computer Science & Engineering, IIT Delhi",
+      links: [
+        { type: "personal", url: "https://www.cse.iitd.ac.in/~parags/", label: "Personal page" },
+      ],
     },
     {
-      name: "Dr. Meera Gupta",
-      title: "Professor, Delhi University",
-      department: "Department of Education",
-      expertise: "Rural Education, Teacher Training",
-      contribution: "Mentorship in pedagogical approaches and teacher development programs",
-      image: "/placeholder.svg?height=200&width=200",
-      credentials: ["Ph.D. Education", "20+ years experience", "Expert in rural pedagogy"],
-      role: "Education Consultant",
+      name: "Prof. Nomesh Bhojkumar Bolia",
+      title: "Professor, Department of Mechanical Engineering, IIT Delhi",
+      links: [
+        { type: "profile", url: "https://mech.iitd.ac.in/faculty-profile/173", label: "IIT Delhi profile" },
+        { type: "linkedin", url: "https://www.linkedin.com/in/nomesh-bolia-8109966/", label: "LinkedIn" },
+      ],
     },
     {
-      name: "Shri Anil Prakash",
-      title: "Former IAS Officer",
-      department: "Bihar Education Service",
-      expertise: "Educational Administration, Policy Development",
-      contribution: "Guidance on government relations and policy compliance",
-      image: "/placeholder.svg?height=200&width=200",
-      credentials: ["IAS 1985 Batch", "Former Education Secretary", "Rural development expert"],
-      role: "Policy Advisor",
+      name: "Kumar Subham",
+      title: "Director, Sewa International Bharat",
+      links: [
+        { type: "personal", url: "https://www.kumarsubham.in/", label: "Personal site" },
+        { type: "linkedin", url: "https://www.linkedin.com/in/kumar-subham/", label: "LinkedIn" },
+      ],
     },
     {
-      name: "Dr. Sunita Devi",
-      title: "Agricultural Scientist",
-      department: "Bihar Agricultural University",
-      expertise: "Sustainable Agriculture, Organic Farming",
-      contribution: "Technical guidance for agricultural and environmental programs",
-      image: "/placeholder.svg?height=200&width=200",
-      credentials: ["Ph.D. Agriculture", "15+ years research", "Organic farming pioneer"],
-      role: "Agriculture Mentor",
+      name: "Sahil Aggarwal",
+      title: "Co-founder & CEO, Rishihood University",
+      links: [
+        { type: "profile", url: "https://rishihood.edu.in/people/sahil-aggarwal/", label: "Rishihood profile" },
+        { type: "linkedin", url: "https://www.linkedin.com/in/sahilagg92/", label: "LinkedIn" },
+      ],
     },
     {
-      name: "Shri Ramesh Chandra",
-      title: "Social Entrepreneur",
-      department: "Founder, Rural Development Foundation",
-      expertise: "NGO Management, Community Development",
-      contribution: "Strategic advice on organizational growth and sustainability",
-      image: "/placeholder.svg?height=200&width=200",
-      credentials: ["30+ years NGO experience", "Award-winning social worker", "Rural development expert"],
-      role: "Strategic Advisor",
+      name: "Dr. Rohit Kumar Choudhary",
+      title: "Assistant Professor, Department of Environmental Science, University of Delhi",
+      links: [
+        { type: "linkedin", url: "https://www.linkedin.com/in/dr-rohit-kumar-choudhary-957990b5/", label: "LinkedIn" },
+      ],
     },
     {
-      name: "Dr. Priya Sharma",
-      title: "Child Psychologist",
-      department: "AIIMS, New Delhi",
-      expertise: "Child Development, Educational Psychology",
-      contribution: "Guidance on holistic child development and mental health programs",
-      image: "/placeholder.svg?height=200&width=200",
-      credentials: ["Ph.D. Psychology", "Child development specialist", "10+ years clinical experience"],
-      role: "Child Development Advisor",
+      name: "Dr. Tarun Mangla",
+      title: "Assistant Professor, Department of Computer Science & Engineering, IIT Delhi",
+      links: [
+        { type: "linkedin", url: "https://www.linkedin.com/in/tarun-mangla-1a78a237/", label: "LinkedIn" },
+      ],
     },
   ]
 
@@ -89,6 +74,19 @@ export function Mentors() {
     },
   ]
 
+  const getLinkIcon = (type: string) => {
+    switch (type) {
+      case "linkedin":
+        return <Linkedin className="w-3 h-3" />
+      case "personal":
+        return <Globe className="w-3 h-3" />
+      case "profile":
+        return <ExternalLink className="w-3 h-3" />
+      default:
+        return <ExternalLink className="w-3 h-3" />
+    }
+  }
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -112,54 +110,49 @@ export function Mentors() {
         {/* Mentors Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {mentors.map((mentor, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-6 text-center space-y-4">
+            <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-4 border-purple-200 bg-gradient-to-br from-white via-purple-50 to-blue-50 hover:from-purple-100 hover:via-blue-100 hover:to-indigo-50 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/5 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-8 text-center space-y-6 relative z-10">
                 {/* Profile Image */}
                 <div className="relative mx-auto w-24 h-24">
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full blur-sm opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                   <Image
-                    src={mentor.image || "/placeholder.svg"}
+                    src="/placeholder.svg?height=200&width=200"
                     alt={mentor.name}
                     width={96}
                     height={96}
-                    className="w-full h-full rounded-full object-cover shadow-lg"
+                    className="relative w-full h-full rounded-full object-cover shadow-xl border-4 border-white group-hover:border-purple-200 transition-all duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute -bottom-2 -right-2 bg-purple-500 text-white p-1.5 rounded-full shadow-lg">
-                    <GraduationCap className="w-4 h-4" />
+                  <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                    <Award className="w-4 h-4 text-white" />
                   </div>
                 </div>
-
-                {/* Profile Info */}
-                <div className="space-y-2">
-                  <h3 className="text-lg font-bold text-gray-900">{mentor.name}</h3>
-                  <p className="text-sm font-semibold text-purple-600">{mentor.title}</p>
-                  <p className="text-xs text-gray-600">{mentor.department}</p>
+                
+                {/* Name & Title */}
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-purple-800 transition-colors duration-300 leading-tight">{mentor.name}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed font-medium group-hover:text-gray-700 transition-colors duration-300">{mentor.title}</p>
                 </div>
 
-                {/* Role Badge */}
-                <div className="inline-flex items-center px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-medium">
-                  {mentor.role}
-                </div>
-
-                {/* Expertise */}
-                <div className="text-center">
-                  <p className="text-sm font-medium text-gray-900 mb-1">Expertise:</p>
-                  <p className="text-xs text-gray-600">{mentor.expertise}</p>
-                </div>
-
-                {/* Credentials */}
-                <div className="space-y-1">
-                  {mentor.credentials.map((credential, credIndex) => (
-                    <div key={credIndex} className="flex items-center justify-center space-x-2">
-                      <div className="w-1 h-1 bg-green-500 rounded-full"></div>
-                      <span className="text-xs text-gray-700">{credential}</span>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Contribution */}
-                <div className="bg-gray-50 rounded-lg p-3">
-                  <p className="text-xs text-gray-600 italic">"{mentor.contribution}"</p>
-                </div>
+                {/* Links */}
+                {mentor.links.length > 0 && (
+                  <div className="flex justify-center gap-3 pt-4">
+                    {mentor.links.map((link, linkIndex) => (
+                      <a
+                        key={linkIndex}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/link inline-flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+                        title={link.label}
+                      >
+                        <div className="group-hover/link:scale-110 transition-transform duration-200">
+                          {getLinkIcon(link.type)}
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
@@ -199,40 +192,56 @@ export function Mentors() {
 
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <GraduationCap className="w-8 h-8 text-purple-600" />
+              </div>
               <div className="text-gray-700 font-medium">Expert Mentors</div>
-              <div className="text-sm text-gray-500">From top institutions</div>
+              <div className="text-2xl font-bold text-purple-600">6</div>
+              <div className="text-sm text-gray-500">Distinguished advisors</div>
             </div>
+
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">200+</div>
-              <div className="text-gray-700 font-medium">Hours of Guidance</div>
-              <div className="text-sm text-gray-500">Monthly mentorship</div>
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-blue-600" />
+              </div>
+              <div className="text-gray-700 font-medium">Years of Experience</div>
+              <div className="text-2xl font-bold text-blue-600">100+</div>
+              <div className="text-sm text-gray-500">Combined expertise</div>
             </div>
+
             <div className="text-center">
-              <div className="text-3xl font-bold text-green-600 mb-2">10+</div>
-              <div className="text-gray-700 font-medium">Partner Organizations</div>
-              <div className="text-sm text-gray-500">Collaborative support</div>
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building className="w-8 h-8 text-green-600" />
+              </div>
+              <div className="text-gray-700 font-medium">Institutions</div>
+              <div className="text-2xl font-bold text-green-600">4</div>
+              <div className="text-sm text-gray-500">Premier universities</div>
             </div>
+
             <div className="text-center">
-              <div className="text-3xl font-bold text-orange-600 mb-2">100%</div>
-              <div className="text-gray-700 font-medium">Quality Assurance</div>
-              <div className="text-sm text-gray-500">Expert-validated programs</div>
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <GraduationCap className="w-8 h-8 text-orange-600" />
+              </div>
+              <div className="text-gray-700 font-medium">Students Mentored</div>
+              <div className="text-2xl font-bold text-orange-600">500+</div>
+              <div className="text-sm text-gray-500">Lives transformed</div>
             </div>
           </div>
         </div>
 
         {/* Testimonial from Mentor */}
-        <div className="mt-16 bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto">
-              <Award className="w-8 h-8 text-white" />
+        <div className="mt-16 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8">
+          <div className="text-center">
+            <div className="w-16 h-16 bg-purple-200 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Award className="w-8 h-8 text-purple-600" />
             </div>
-            <blockquote className="text-xl lg:text-2xl italic leading-relaxed">
-              "Mukund's vision of combining modern education with traditional values is exactly what rural India needs.
-              His dedication and the systematic approach of Divya Bihar Mission gives me confidence that this model can
-              be replicated across the country."
+            <blockquote className="text-lg italic text-gray-700 mb-4">
+              "The transformation happening in rural Bihar through education is truly inspiring. Every child deserves
+              quality education, and Divya Bihar Global Gurukulam is making this vision a reality."
             </blockquote>
-            <cite className="text-lg opacity-90 block">- Prof. Dr. Rajesh Kumar Sharma, IIT Delhi</cite>
+            <div className="text-sm text-gray-600">
+              <strong>Our Mentors</strong> • Guiding Rural Transformation
+            </div>
           </div>
         </div>
       </div>

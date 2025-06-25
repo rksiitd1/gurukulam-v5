@@ -46,7 +46,7 @@ export function GalleryHero() {
 
               <div className="bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-purple-500 p-6 rounded-r-lg">
                 <blockquote className="text-purple-800 font-devanagari text-xl mb-2">
-                  "हर तस्वीर एक कहानी कहती है, हर वीडियो एक सपना दिखाता है"
+                  "हर तस्वीर एक कहानी कहती है"
                 </blockquote>
                 <p className="text-purple-700 italic">"Every picture tells a story, every video shows a dream"</p>
               </div>

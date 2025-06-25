@@ -51,35 +51,6 @@ export function Hero() {
               </div>
             </div>
 
-            {/* CTA Buttons - responsive stacking */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-              <Button
-                size="lg"
-                className="bg-orange-600 hover:bg-orange-700 text-white w-full sm:w-auto touch-manipulation"
-              >
-                <Heart className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Support Our Mission
-              </Button>
-              <Link href="/join-our-gurukulam">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto touch-manipulation"
-                >
-                  <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                  Join Our Gurukulam
-                </Button>
-              </Link>
-              <Button
-                size="lg"
-                variant="ghost"
-                className="text-gray-700 hover:text-orange-600 w-full sm:w-auto touch-manipulation"
-              >
-                <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Watch Story
-              </Button>
-            </div>
-
             {/* Quick Stats - responsive grid */}
             <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-gray-200">
               <div className="text-center">

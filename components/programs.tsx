@@ -116,10 +116,18 @@ export function Programs() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
-                  <Button variant="outline" className="flex-1 text-sm touch-manipulation">
-                    Learn More
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                  <Link href={
+                    index === 0 ? "/programs/gurukulam" :
+                    index === 1 ? "/programs/shri-classes" :
+                    index === 2 ? "/programs/agriculture" :
+                    index === 3 ? "/programs/udyamita" :
+                    "/programs"
+                  }>
+                    <Button variant="outline" className="touch-manipulation border-2 border-blue-500">
+                      Learn More
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </Link>
                   <Link href="/donate">
                     <Button className="bg-orange-600 hover:bg-orange-700 text-white text-sm touch-manipulation">
                       Support This

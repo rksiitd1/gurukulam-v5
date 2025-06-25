@@ -62,9 +62,11 @@ export function CommunityEngagementSection() {
             <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white w-full sm:w-auto">
               Join Our Community
             </Button>
-            <Button size="lg" variant="outline" className="border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
-              Meet Our Mentors
-            </Button>
+            <a href="/about#mentors" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="border-green-600 text-green-700 hover:bg-green-50 w-full sm:w-auto">
+                Meet Our Mentors
+              </Button>
+            </a>
           </div>
           <div className="mt-10 max-w-2xl mx-auto bg-white/80 rounded-xl p-6 shadow">
             <blockquote className="text-lg italic text-gray-800 mb-2">

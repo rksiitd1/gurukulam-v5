@@ -144,30 +144,7 @@ export function Testimonials() {
         </div>
 
         {/* Community Impact */}
-        <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Community Recognition</h3>
-            <p className="text-gray-600 font-devanagari">समुदायिक सम्मान</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-blue-600">98%</div>
-              <div className="text-gray-700">Parent Satisfaction</div>
-              <div className="text-sm text-gray-500">Based on annual surveys</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-green-600">4.9/5</div>
-              <div className="text-gray-700">Community Rating</div>
-              <div className="text-sm text-gray-500">From local stakeholders</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-orange-600">100+</div>
-              <div className="text-gray-700">Success Stories</div>
-              <div className="text-sm text-gray-500">Documented transformations</div>
-            </div>
-          </div>
-        </div>
+        {/* Community Recognition section removed as per request */}
       </div>
     </section>
   )

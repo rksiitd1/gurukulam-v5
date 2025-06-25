@@ -240,37 +240,6 @@ export function StudentShowcase() {
             ))}
           </div>
         </div>
-
-        {/* Achievement Statistics */}
-        <div className="mt-16 bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 text-white">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-2">Student Achievement Statistics</h3>
-            <p className="opacity-90 font-devanagari">छात्र उपलब्धि आंकड़े</p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">95%</div>
-              <div className="text-sm opacity-90">Pass Rate</div>
-              <div className="text-xs opacity-75">Class 10 & 12</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-sm opacity-90">College Admissions</div>
-              <div className="text-xs opacity-75">Engineering & Medical</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">25+</div>
-              <div className="text-sm opacity-90">Competition Winners</div>
-              <div className="text-xs opacity-75">State & National Level</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">100+</div>
-              <div className="text-sm opacity-90">Awards & Recognition</div>
-              <div className="text-xs opacity-75">Academic & Cultural</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

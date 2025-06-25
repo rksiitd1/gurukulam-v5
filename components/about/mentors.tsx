@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { GraduationCap, Award, Building, ExternalLink, Linkedin, Globe } from "lucide-react"
+import { GraduationCap, Award, Building, ExternalLink, Linkedin, Globe, Heart, Sprout, Users } from "lucide-react"
 import Image from "next/image"
 
 export function Mentors() {
@@ -195,7 +195,7 @@ export function Mentors() {
         </div>
 
         {/* Advisory Board & Partners */}
-        <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-8">
+        <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Advisory Board & Partners</h3>
             <p className="text-gray-600 font-devanagari">सलाहकार मंडल और भागीदार</p>
@@ -205,12 +205,12 @@ export function Mentors() {
             {advisoryBoard.map((partner, index) => (
               <Card key={index} className="bg-white hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                    <Building className="w-6 h-6 text-purple-600" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-slate-100 to-blue-100 rounded-full flex items-center justify-center">
+                    <Building className="w-6 h-6 text-slate-600" />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-semibold text-gray-900">{partner.name}</h4>
-                    <p className="text-sm text-purple-600 mb-1">{partner.type}</p>
+                    <p className="text-sm text-slate-600 mb-1">{partner.type}</p>
                     <p className="text-xs text-gray-600">{partner.contribution}</p>
                   </div>
                 </CardContent>
@@ -219,64 +219,104 @@ export function Mentors() {
           </div>
         </div>
 
-        {/* Mentorship Impact */}
-        <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Mentorship Impact</h3>
-            <p className="text-gray-600 font-devanagari">मार्गदर्शन का प्रभाव</p>
+        {/* Mentors' Expertise Showcase */}
+        <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Guiding Our Mission</h3>
+            <p className="text-lg text-gray-600 font-devanagari mb-2">हमारे मिशन का मार्गदर्शन</p>
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto">Our distinguished mentors embody the principles that drive our transformation, combining academic excellence with dharmic wisdom</p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <GraduationCap className="w-8 h-8 text-purple-600" />
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-br from-slate-100 to-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <GraduationCap className="w-8 h-8 text-slate-600" />
               </div>
-              <div className="text-gray-700 font-medium">Expert Mentors</div>
-              <div className="text-2xl font-bold text-purple-600">6</div>
-              <div className="text-sm text-gray-500">Distinguished advisors</div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Education with Yogic Values</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Integrating traditional wisdom with modern learning for holistic development</p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Award className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-gray-700 font-medium">Years of Experience</div>
-              <div className="text-2xl font-bold text-blue-600">100+</div>
-              <div className="text-sm text-gray-500">Combined expertise</div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Rural Empowerment</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Transforming rural communities through inclusive, sustainable development</p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building className="w-8 h-8 text-green-600" />
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Building className="w-8 h-8 text-indigo-600" />
               </div>
-              <div className="text-gray-700 font-medium">Institutions</div>
-              <div className="text-2xl font-bold text-green-600">4</div>
-              <div className="text-sm text-gray-500">Premier universities</div>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <GraduationCap className="w-8 h-8 text-orange-600" />
-              </div>
-              <div className="text-gray-700 font-medium">Students Mentored</div>
-              <div className="text-2xl font-bold text-orange-600">500+</div>
-              <div className="text-sm text-gray-500">Lives transformed</div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Service & Compassion</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Fostering values of seva, empathy, and community service in education</p>
             </div>
           </div>
         </div>
 
+        {/* Values Reflection */}
+        <div className="mt-16">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Core Values</h3>
+            <p className="text-lg text-gray-600 font-devanagari">हमारे मूल सिद्धांत</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-center"><Heart className="w-8 h-8 text-red-500" /></div>
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900">Seva</h4>
+                  <p className="text-lg font-devanagari text-gray-600">सेवा</p>
+                </div>
+                <p className="text-gray-600 text-sm">Selfless service to uplift rural communities through education and empowerment.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-center"><GraduationCap className="w-8 h-8 text-blue-500" /></div>
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900">Sanskar</h4>
+                  <p className="text-lg font-devanagari text-gray-600">संस्कार</p>
+                </div>
+                <p className="text-gray-600 text-sm">Instilling cultural values and moral character alongside modern education.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-center"><Sprout className="w-8 h-8 text-green-500" /></div>
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900">Sustainability</h4>
+                  <p className="text-lg font-devanagari text-gray-600">स्थिरता</p>
+                </div>
+                <p className="text-gray-600 text-sm">Promoting eco-friendly farming and self-reliant village economies.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-center"><Users className="w-8 h-8 text-orange-500" /></div>
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900">Community</h4>
+                  <p className="text-lg font-devanagari text-gray-600">समुदाय</p>
+                </div>
+                <p className="text-gray-600 text-sm">Building strong, culturally rooted communities that support each other.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
         {/* Testimonial from Mentor */}
-        <div className="mt-16 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8">
+        <div className="mt-16 bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl p-8 border border-slate-200">
           <div className="text-center">
-            <div className="w-16 h-16 bg-purple-200 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Award className="w-8 h-8 text-purple-600" />
+            <div className="w-16 h-16 bg-gradient-to-br from-slate-200 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Award className="w-8 h-8 text-slate-600" />
             </div>
-            <blockquote className="text-lg italic text-gray-700 mb-4">
+            <blockquote className="text-lg italic text-gray-700 mb-6 leading-relaxed">
               "The transformation happening in rural Bihar through education is truly inspiring. Every child deserves
               quality education, and Divya Bihar Global Gurukulam is making this vision a reality."
             </blockquote>
             <div className="text-sm text-gray-600">
-              <strong>Our Mentors</strong> • Guiding Rural Transformation
+              <strong>Our Distinguished Mentors</strong> • Guiding Rural Transformation
             </div>
           </div>
         </div>
